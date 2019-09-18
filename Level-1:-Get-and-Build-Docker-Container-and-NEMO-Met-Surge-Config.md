@@ -21,6 +21,9 @@ Checkout NEMO code and XIOS code into directories at same level as NEMO-Docker::
 
 This should result in four folders with the NEMO code in one folder, and xios2.0 code in another (with a sym link to the xios-2.0 folder as XIOS2) and the pderian folder. Copy the arch files that came from Pierre's github.::
 
+
+*THIS WOULD BE THE PLACE TO DO A GIT CLONE OF THE BELIZE CODE (MY_SRC, NAMELIST ETC)*
+
 	cd $HOME/nemo-nowcast-docker/SRC
 	cp pderian/arch_NEMOGCM/arch* NEMOGCM/ARCH; cp pderian/arch_XIOS/arch* XIOS2/arch
 

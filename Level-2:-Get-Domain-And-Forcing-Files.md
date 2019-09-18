@@ -38,6 +38,9 @@ RIVERS::
 
 	runoff.nc
 
+Met data::
+
+ metdta/*
 
 These files can all be downloaded into a clean "EXP"eriment directory
 
@@ -46,3 +49,14 @@ Link in the nemo and xios executables::
 	cd EXP
 	ln -s /SRC/NEMOGCM/CONFIG/BELTOY/BLD/bin/nemo.exe opa
 	ln -s /SRC/xios-2.0_r1080/bin/xios_server.exe xios_server.exe
+
+
+
+Make a restarts directory (essential)::
+
+	cd /SRC/NEMOGCM/CONFIG/BELTOY/EXP
+	mkdir rst
+
+Submit::
+
+	mpirun -n 4 ./opa
