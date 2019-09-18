@@ -16,7 +16,7 @@ Checkout NEMO code and XIOS code into directories at same level as NEMO-Docker::
 
 	cd $HOME/nemo-nowcast-docker/SRC
 	svn co http://forge.ipsl.jussieu.fr/nemo/svn/trunk/NEMOGCM@8395 NEMOGCM
-	svn co -r1242 http://forge.ipsl.jussieu.fr/ioserver/svn/XIOS/trunk $XIOS_DIR xios-2.0_r1242
+	svn co -r1242 http://forge.ipsl.jussieu.fr/ioserver/svn/XIOS/trunk xios-2.0_r1242
 	ln -s xios-2.0_r1242/ XIOS2
 
 This should result in four folders with the NEMO code in one folder, and xios2.0 code in another (with a sym link to the xios-2.0 folder as XIOS2) and the pderian folder. Copy the arch files that came from Pierre's github.::
