@@ -1,2 +1,2 @@
-[Home](https://github.com/NOC-MSM/Belize/wiki)  
-[First Section](https://github.com/NOC-MSM/Belize/wiki/First-Section)  
+[Home](https://github.com/NOC-MSM/Belize_workshop/wiki)  
+[First Section](https://github.com/NOC-MSM/Belize_workshop/wiki/First-Section)  
