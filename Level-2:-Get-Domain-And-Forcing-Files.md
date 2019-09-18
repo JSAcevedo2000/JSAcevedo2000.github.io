@@ -58,7 +58,21 @@ Files required in the EXP00 directory::
 
 ---
 
+
+Something funny went on with nemo make clean in the EXP00 directory - lost all the namelists. Also lost the cpp file.
+
+Something funny with the tides keys:  ``key_FES14_tides key_diaharm_fast`` -
+cut them out and rebuilt!
+
+So git clone the repo to an EXP01 directory.
+
+Then copy in all the binary files::
+
+
+	rsync -uvtr /Users/jeff/Desktop/temp/ /Users/jeff/nemo-nowcast-docker/SRC/NEMOGCM/CONFIG/Belize_workshop/EXP01
+
+
 Submit::
 
-	cd /SRC/NEMOGCM/CONFIG/BELTOY/EXP
+	cd /SRC/NEMOGCM/CONFIG/Belize_workshop/EXP01
 	mpirun -n 4 ./opa
