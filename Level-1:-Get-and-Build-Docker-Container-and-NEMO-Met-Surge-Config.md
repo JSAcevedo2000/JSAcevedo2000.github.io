@@ -15,9 +15,9 @@ Git clone Pierre's github repository in a directory structure::
 Checkout NEMO code and XIOS code into directories at same level as NEMO-Docker::
 
 	cd $HOME/nemo-nowcast-docker/SRC
-	svn co -r 9709 http://forge.ipsl.jussieu.fr/nemo/svn/branches/UKMO/dev_r8814_surge_modelling_Nemo4/NEMOGCM NEMOGCM
-	svn co -r 1229 http://forge.ipsl.jussieu.fr/ioserver/svn/XIOS/trunk xios-2.0_r1229
-	ln -s xios-2.0_r1229/ XIOS2
+	svn co http://forge.ipsl.jussieu.fr/nemo/svn/trunk/NEMOGCM@8395 NEMOGCM
+	svn co -r1242 http://forge.ipsl.jussieu.fr/ioserver/svn/XIOS/trunk $XIOS_DIR xios-2.0_r1242
+	ln -s xios-2.0_r1242/ XIOS2
 
 This should result in four folders with the NEMO code in one folder, and xios2.0 code in another (with a sym link to the xios-2.0 folder as XIOS2) and the pderian folder. Copy the arch files that came from Pierre's github.::
 
@@ -30,8 +30,14 @@ This should result in four folders with the NEMO code in one folder, and xios2.0
 Edit the DEBIAN arch file to point to XIOS2 not XIOS::
 
   	nano $HOME/nemo-nowcast-docker/SRC/NEMOGCM/ARCH/arch-DEBIAN.fcm
-	...
-	%XIOS_HOME           /SRC/XIOS2
+		...
+		%XIOS_HOME           /SRC/XIOS2
+
+
+Clone the template files for the NEMO configuration into the NEMO file structure::
+
+	cd $HOME/nemo-nowcast-docker/SRC/NEMOGCM/CONFIG
+	git clone https://github.com/NOC-MSM/Belize_workshop.git
 
 The docker image can now be built, (currently use pierre's orginal dockerfile but will be modified to simplify the set up in the future.)::
 
@@ -60,7 +66,7 @@ This should successfully build and result in an executable in the XIOS
  directories. Some environmental variables need to be defined (this can't be
   done until inside the container)::
 
-	export CONFIG=<config_name>
+	export CONFIG=Belize_workshop
 	export WORK=/SRC
 	export WDIR=/SRC
 	export INPUTS=$WDIR/INPUTS
@@ -78,7 +84,7 @@ Answer yes to the first question (OPA_SRC), no to all the others.
 
 the XIOS_server.exe can now be linked::
 
-	ln -s  $WDIR/xios-2.0_r1080/bin/xios_server.exe $EXP/xios_server.exe
+	ln -s  $WDIR/xios-2.0_r1242/bin/xios_server.exe $EXP/xios_server.exe
 
 Check the compile flags (In nano: Ctrl-O to save. Ctrl-X to quit)::
 
