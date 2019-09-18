@@ -5,4 +5,4 @@
 ### Topics covered:
 
 * Setup and build XIOS and NEMO on a docker image
-* Other stuff
+* Run NEMO
