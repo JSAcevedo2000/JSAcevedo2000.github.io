@@ -82,19 +82,12 @@ NEMO can now be built::
 
 Answer yes to the first question (OPA_SRC), no to all the others.
 
-the XIOS_server.exe can now be linked::
-
-	ln -s  $WDIR/xios-2.0_r1242/bin/xios_server.exe $EXP/xios_server.exe
-
-Check the compile flags (In nano: Ctrl-O to save. Ctrl-X to quit)::
-
-	nano $CONFIG/cpp_$CONFIG.fcm
-	bld::tool::fppkeys key_zdfgls        \
-	                 key_FES14_tides   \
-	                 key_diaharm_fast  \
-	                 key_mpp_mpi       \
-	                 key_nosignedzero
 
 Then build NEMO again::
 
 	./makenemo -n $CONFIG -m DEBIAN
+
+
+	The XIOS_server.exe can now be linked::
+
+		ln -s  $WDIR/xios-2.0_r1242/bin/xios_server.exe $EXP/xios_server.exe

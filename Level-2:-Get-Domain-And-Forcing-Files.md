@@ -44,19 +44,21 @@ Met data::
 
 These files can all be downloaded into a clean "EXP"eriment directory
 
-Link in the nemo and xios executables::
+---
 
-	cd EXP
-	ln -s /SRC/NEMOGCM/CONFIG/BELTOY/BLD/bin/nemo.exe opa
-	ln -s /SRC/xios-2.0_r1080/bin/xios_server.exe xios_server.exe
+Files required in the EXP00 directory::
 
+	drwxr-xr-x   3 jeff  staff       96 18 Sep 12:59 bdydta
+	-rw-r--r--   1 jeff  staff    37065 30 Jul 16:03 coordinates.bdy.nc
+	-rw-r--r--   1 jeff  staff  4943472 26 Jul 16:28 domain_cfg.nc
+	-rw-r--r--   1 jeff  staff  1029193 26 Jul 15:09 initcd_vosaline.nc
+	-rw-r--r--   1 jeff  staff  1029193 26 Jul 15:09 initcd_votemper.nc
+	drwxr-xr-x  17 jeff  staff      544 16 Sep 09:24 metdta
+	-rw-r--r--   1 jeff  staff   211312 26 Jul 15:09 runoff.nc
 
-
-Make a restarts directory (essential)::
-
-	cd /SRC/NEMOGCM/CONFIG/BELTOY/EXP
-	mkdir rst
+---
 
 Submit::
 
+	cd /SRC/NEMOGCM/CONFIG/BELTOY/EXP
 	mpirun -n 4 ./opa
