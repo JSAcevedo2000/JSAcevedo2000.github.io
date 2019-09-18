@@ -88,6 +88,6 @@ Then build NEMO again::
 	./makenemo -n $CONFIG -m DEBIAN
 
 
-	The XIOS_server.exe can now be linked::
+The XIOS_server.exe can now be linked::
 
-		ln -s  $WDIR/xios-2.0_r1242/bin/xios_server.exe $EXP/xios_server.exe
+	ln -s  $WDIR/xios-2.0_r1242/bin/xios_server.exe $EXP/xios_server.exe
