@@ -22,16 +22,14 @@ Checkout NEMO code and XIOS code into directories at same level as NEMO-Docker::
 This should result in four folders with the NEMO code in one folder, and xios2.0 code in another (with a sym link to the xios-2.0 folder as XIOS2) and the pderian folder. Copy the arch files that came from Pierre's github.::
 
 
-*THIS WOULD BE THE PLACE TO DO A GIT CLONE OF THE BELIZE CODE (MY_SRC, NAMELIST ETC)*
-
 	cd $HOME/nemo-nowcast-docker/SRC
 	cp pderian/arch_NEMOGCM/arch* NEMOGCM/ARCH; cp pderian/arch_XIOS/arch* XIOS2/arch
 
 Edit the DEBIAN arch file to point to XIOS2 not XIOS::
 
-  	nano $HOME/nemo-nowcast-docker/SRC/NEMOGCM/ARCH/arch-DEBIAN.fcm
-		...
-		%XIOS_HOME           /SRC/XIOS2
+	nano $HOME/nemo-nowcast-docker/SRC/NEMOGCM/ARCH/arch-DEBIAN.fcm
+	...
+	%XIOS_HOME           /SRC/XIOS2
 
 
 Clone the template files for the NEMO configuration into the NEMO file structure::
@@ -58,8 +56,7 @@ The image can now be run, the path to SRC needs to be absolute, so switch
 
 This should result in the container running and the terminal will move to the container e.g. (root@"container id"#) XIOS can now be compiled::
 
-	cd SRC
-	cd XIOS2
+	cd SRC/XIOS2
 	./make_xios --dev --netcdf_lib netcdf4_seq --arch DEBIAN
 
 This should successfully build and result in an executable in the XIOS
