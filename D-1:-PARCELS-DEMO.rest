@@ -1,4 +1,5 @@
-# # Build PARCELS environment
+Build PARCELS environment
+==========================
 
 Using a Docker instance install miniconda3 and then python modules for PARCELS
 as follows::
@@ -8,7 +9,7 @@ as follows::
   docker build -t parcels .
 
 
-Ensure all your data files are in this directory.
+Ensure all your data files are in this directory::
 
   cp <STUFF> /Belize_workshop/PARCELS_DEMO/.
 
