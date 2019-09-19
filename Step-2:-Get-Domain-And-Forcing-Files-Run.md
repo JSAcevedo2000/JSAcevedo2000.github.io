@@ -19,8 +19,9 @@ cut them out and rebuilt!
 
 Then copy in all the domain and forcing files::
 
-	rsync -uvtr /Users/jeff/Desktop/temp/ /Users/jeff/Belize_workshop/RUN_NEMO/EXP_demo
+	rsync -uvtr /Users/jeff/Public/Dropbox/BLZ/ /Users/jeff/Belize_workshop/RUN_NEMO/EXP_demo
 
+OR copy from https://www.dropbox.com/sh/utkj9tw0n3ccfwn/AABbzqgzLq63WPG3SYKl8ufOa?dl=0
 
 Submit::
 
