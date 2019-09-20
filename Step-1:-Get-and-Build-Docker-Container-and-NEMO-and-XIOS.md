@@ -69,7 +69,7 @@ Answer yes to the first question (OPA_SRC), no to all the others.
 
 Copy MY_SRC fortran modifications into directory::
 
-	cp $WDIR/BUILD_NEMO/MY_SRC $CDIR/$CONFIG/.
+	cp -r $WDIR/BUILD_NEMO/MY_SRC $CDIR/$CONFIG/.
 
 Copy compiler flag options into directory::
 
