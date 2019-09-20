@@ -45,7 +45,7 @@ The image can now be run, the path to SRC needs to be absolute, so switch
 
 This should result in the container running and the terminal will move to the container e.g. (root@"container id"#) XIOS can now be compiled::
 
-	cd /Belize_workshop/BUILD_TOOLS/XIOS2
+	cd /Belize_workshop/BUILD_NEMO/XIOS2
 	./make_xios --dev --netcdf_lib netcdf4_seq --arch DEBIAN
 
 This should successfully build and result in an executable in the XIOS
