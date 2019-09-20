@@ -91,6 +91,8 @@ This should build a nemo.exe file. At this point you can abandon BUILD_TOOLS exc
 Checkout built executables
 ==========================
 
+*(Doesn't work yet...)*
+
 If the above is not very interesting and you want to get on with running the
 NEMO model, you can download an image of the above (~424Mb)::
 
