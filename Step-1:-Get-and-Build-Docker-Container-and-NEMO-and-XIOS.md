@@ -57,7 +57,7 @@ Some environmental variables need to be defined (this can't be
 
 	export CONFIG=BLZ
 	export WDIR=/Belize_workshop
-	export CDIR=$WDIR/BUILD_TOOLS/NEMOGCM/CONFIG
+	export CDIR=$WDIR/BUILD_NEMO/NEMOGCM/CONFIG
 	export EXP=$WDIR/RUN_NEMO/EXP_demo
 
 NEMO can now be built. Create an empty configuration::
@@ -69,11 +69,11 @@ Answer yes to the first question (OPA_SRC), no to all the others.
 
 Copy MY_SRC fortran modifications into directory::
 
-	mv $WDIR/BUILD_TOOLS/MY_SRC $CDIR/$CONFIG/.
+	cp $WDIR/BUILD_NEMO/MY_SRC $CDIR/$CONFIG/.
 
 Copy compiler flag options into directory::
 
-	cp $WDIR/BUILD_TOOLS/cpp_file.fcm $CDIR/$CONFIG/cpp_BLZ.fcm
+	cp $WDIR/BUILD_NEMO/cpp_file.fcm $CDIR/$CONFIG/cpp_BLZ.fcm
 
 **ACTUALLY I COMMENT OUT THE key_diaharm_fast AND key_FES14_tides FLAGS...**
 
@@ -83,7 +83,7 @@ Then build NEMO again::
 
 This should build a nemo.exe file. At this point you can abandon BUILD_TOOLS except for two executables that need to go into an EXPeriment directory::
 
-	ln -s $WDIR/BUILD_TOOLS/xios-2.0_r1242/bin/xios_server.exe $EXP/xios_server.exe
+	ln -s $WDIR/BUILD_NEMO/xios-2.0_r1242/bin/xios_server.exe $EXP/xios_server.exe
 	ln -s $CDIR/$CONFIG/BLD/bin/nemo.exe $EXP/opa
 
 
