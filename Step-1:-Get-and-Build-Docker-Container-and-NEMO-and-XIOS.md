@@ -12,7 +12,7 @@ Follow the steps below as there is some differences to Pierre's method::
 	cd $HOME
 	git clone https://github.com/NOC-MSM/Belize_workshop.git
 
-	cd Belize_workshop/BUILD_TOOLS
+	cd Belize_workshop/BUILD_NEMO
 
 
 Checkout NEMO code and XIOS code into directories at same level as NEMO-Docker::
