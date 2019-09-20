@@ -4,5 +4,7 @@
 
 ### Topics covered:
 
-* Setup and build XIOS and NEMO on a docker image
+* Setup and build XIOS and NEMO in a docker image
 * Run NEMO
+* Lagrangian analysis of NEMO output, using PARCELS
+* Plotting surface fields using Python script

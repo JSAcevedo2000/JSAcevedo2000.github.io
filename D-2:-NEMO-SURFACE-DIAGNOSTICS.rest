@@ -7,18 +7,18 @@ the python environment, or check out the built executables from DockerHub.
 
 
 
-PARCELS DEMONSTRATION
-=====================
+PYTHON DIAGNOSTICS OF NEMO SURFACE FIELDS DEMONSTRATION
+=======================================================
 
 Ensure all your data files are in this directory::
 
-  cp <STUFF> $HOME/Belize_workshop/PYTHON_TOOLS/PARCELS_DEMO/.
+  cp <STUFF> $HOME/Belize_workshop/PYTHON_TOOLS/PYTHON_DIAGNOSTICS/.
 
 Run docker instance::
 
   docker run -v /Users/jeff/Belize_workshop/PYTHON_TOOLS:/PYTHON_TOOLS -t -i blz_python /bin/bash
-  cd /PYTHON_TOOLS/PARCELS_DEMO/
+  cd /PYTHON_TOOLS/PYTHON_DIAGNOSTICS/
 
 Then you can start python, and hopefully do things::
 
-  python <filename>
+  python NEMO_surface_var_diag.py BLZ

@@ -1,3 +1,10 @@
+Here we can either build our own nemo executables or we can checkout a pre-build
+version:
+
+
+Build NEMO executables
+======================
+
 I used this tutorial created by Pierre DERIAN with some changes to reflect the relevent revison of XIOS2 and the metoffice surge nemo code (different to main trunk) Derian's git hub is here https://github.com/pderian/NEMOGCM-Docker
 
 Follow the steps below as there is some differences to Pierre's method::
@@ -78,3 +85,13 @@ This should build a nemo.exe file. At this point you can abandon BUILD_TOOLS exc
 
 	ln -s $WDIR/BUILD_TOOLS/xios-2.0_r1242/bin/xios_server.exe $EXP/xios_server.exe
 	ln -s $CDIR/$CONFIG/BLD/bin/nemo.exe $EXP/opa
+
+
+
+Checkout built executables
+==========================
+
+If the above is not very interesting and you want to get on with running the
+NEMO model, you can download an image of the above (~424Mb)::
+
+	docker pull jelt/nemocompile

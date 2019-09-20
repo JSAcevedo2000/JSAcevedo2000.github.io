@@ -30,3 +30,5 @@ Submit::
 
 
 This blows up after about 5 timesteps.
+
+**TO DO: ADD ALL THE FILES TO THE DOCKER IMAGE ON DOCKERHUB**
