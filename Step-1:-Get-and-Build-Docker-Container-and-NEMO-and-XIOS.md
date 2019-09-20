@@ -23,7 +23,7 @@ Copy the arch files that came from Pierre's github into the NEMO tree::
 The docker image can now be built::
 
 	cd Docker
-	docker build -t nemo/compiler .
+	docker build -t nemocompile .
 
 You may need to add the user to the docker group::
 
@@ -34,7 +34,7 @@ You will need to log out and then back in.
 The image can now be run, the path to SRC needs to be absolute, so switch
 ``/Users/jeff`` to the output of "echo $HOME"::
 
-	docker run -v /Users/jeff/Belize_workshop:/Belize_workshop -t -i nemo/compiler /bin/bash
+	docker run -v /Users/jeff/Belize_workshop:/Belize_workshop -t -i nemocompile /bin/bash
 
 This should result in the container running and the terminal will move to the container e.g. (root@"container id"#) XIOS can now be compiled::
 
