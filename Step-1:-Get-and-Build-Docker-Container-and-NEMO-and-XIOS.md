@@ -96,4 +96,6 @@ Checkout built executables
 If the above is not very interesting and you want to get on with running the
 NEMO model, you can download an image of the above (~424Mb)::
 
-	docker pull jelt/nemocompile
+  docker pull debian:jessie	
+  docker pull jelt/nemocompile:firsttry
+  docker run -v /Users/jeff/Belize_workshop:/Belize_workshop -t -i jelt/nemocompile:firsttry /bin/bash
