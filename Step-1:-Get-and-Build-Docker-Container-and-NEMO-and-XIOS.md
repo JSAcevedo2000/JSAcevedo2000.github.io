@@ -66,7 +66,7 @@ Copy MY_SRC fortran modifications into directory::
 
 Copy compiler flag options into directory::
 
-	cp $WDIR/BUILD_TOOLS/cpp_BLZ.fcm $CDIR/$CONFIG/.
+	cp $WDIR/BUILD_TOOLS/cpp_file.fcm $CDIR/$CONFIG/cpp_BLZ.fcm
 
 **ACTUALLY I COMMENT OUT THE key_diaharm_fast AND key_FES14_tides FLAGS...**
 
