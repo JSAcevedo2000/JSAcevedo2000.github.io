@@ -14,21 +14,16 @@ Files required in the EXP directory::
 ---
 
 Something funny with the tides keys:  ``key_FES14_tides key_diaharm_fast`` -
-cut them out and rebuilt!
+so they are not present.
 
 
 Then copy in all the domain and forcing files::
 
 	rsync -uvtr /Users/jeff/Public/Dropbox/BLZ/ /Users/jeff/Belize_workshop/RUN_NEMO/EXP_demo
 
-OR copy from https://www.dropbox.com/sh/utkj9tw0n3ccfwn/AABbzqgzLq63WPG3SYKl8ufOa?dl=0
+OR copy from an FTP site:
 
 Submit::
 
 	cd /Belize_workshop/RUN_NEMO/EXP_demo
-	mpirun -n 4 ./opa
-
-
-This blows up after about 5 timesteps.
-
-**TO DO: ADD ALL THE FILES TO THE DOCKER IMAGE ON DOCKERHUB**
+	mpirun -n 4 ./opa : -n 1 ./xios_server.exe
