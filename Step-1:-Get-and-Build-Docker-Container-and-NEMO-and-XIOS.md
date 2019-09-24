@@ -1,19 +1,50 @@
 Here we can either build our own nemo executables or we can checkout a pre-build
-version:
+version. However we first have to set up a project space (called ``Belize_workshop``) and obtain necessary files::
+
+	cd $HOME
+	git clone https://github.com/NOC-MSM/Belize_workshop.git
+
+
+To run NEMO we need two executables: ``nemo.exe`` (the hydrodynamic model) and ``xios_server.exe`` (to handle input and output). These can either be downloaded into a controlled and compatible docker environment or built from scratch.
+
+
+---
+
+
+Obtain built executables
+========================
+
+*(Doesn't work yet...)*
+
+First create a compatible docker environment that matches the environment in which the executables were built (~424Mb)::
+
+	docker pull debian:jessie
+	docker pull jelt/nemocompile:firsttry
+	docker run -v $HOME/Belize_workshop:/Belize_workshop -t -i jelt/nemocompile:firsttry /bin/bash
+
+
+You may need to add the user to the docker group::
+
+	$ sudo usermod -aG docker $USER
+
+You will need to log out and then back in.
+
+Then copy in the compiled executables to the run directory::
+
+	cd /Belize_workshop/RUN_NEMO/EXP_demo
+	open ftp.example.com
+	get nemo.exe
+	get xios_server.exe
+	close
+
 
 
 Build NEMO executables
 ======================
 
-I used this tutorial created by Pierre DERIAN with some changes to reflect the relevent revison of XIOS2 and the metoffice surge nemo code (different to main trunk) Derian's git hub is here https://github.com/pderian/NEMOGCM-Docker
-
 Follow the steps below as there is some differences to Pierre's method::
 
-	cd $HOME
-	git clone https://github.com/NOC-MSM/Belize_workshop.git
-
-	cd Belize_workshop/BUILD_NEMO
-
+	cd $HOME/Belize_workshop/BUILD_NEMO
 
 Checkout NEMO code and XIOS code into directories at same level as NEMO-Docker::
 
@@ -75,8 +106,6 @@ Copy compiler flag options into directory::
 
 	cp $WDIR/BUILD_NEMO/cpp_file.fcm $CDIR/$CONFIG/cpp_BLZ.fcm
 
-**ACTUALLY I COMMENT OUT THE key_diaharm_fast AND key_FES14_tides FLAGS...**
-
 Then build NEMO again::
 
 	./makenemo -n $CONFIG -m DEBIAN
@@ -86,16 +115,6 @@ This should build a nemo.exe file. At this point you can abandon BUILD_TOOLS exc
 	ln -s $WDIR/BUILD_NEMO/xios-2.0_r1242/bin/xios_server.exe $EXP/xios_server.exe
 	ln -s $CDIR/$CONFIG/BLD/bin/nemo.exe $EXP/opa
 
+	---
 
-
-Checkout built executables
-==========================
-
-*(Doesn't work yet...)*
-
-If the above is not very interesting and you want to get on with running the
-NEMO model, you can download an image of the above (~424Mb)::
-
-        docker pull debian:jessie	
-        docker pull jelt/nemocompile:firsttry
-        docker run -v /Users/jeff/Belize_workshop:/Belize_workshop -t -i jelt/nemocompile:firsttry /bin/bash
+	You should now be ready to run NEMO.
