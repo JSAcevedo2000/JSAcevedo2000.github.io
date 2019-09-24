@@ -14,7 +14,8 @@ To run NEMO we need two executables: ``nemo.exe`` (the hydrodynamic model) and `
 Obtain built executables
 ========================
 
-*(Doesn't work yet...)*
+*(Doesn't work yet... Need to put wget into Docker. Otherwise use favourite ftp
+client outside of docker)*
 
 First create a compatible docker environment that matches the environment in which the executables were built (~424Mb)::
 
@@ -32,10 +33,11 @@ You will need to log out and then back in.
 Then copy in the compiled executables to the run directory::
 
 	cd /Belize_workshop/RUN_NEMO/EXP_demo
-	open ftp.example.com
-	get nemo.exe
-	get xios_server.exe
-	close
+
+	wget ftp://livftp01.nerc-liv.ac.uk/noc/Belize_workshop/data/nemo_executables/nemo.exe
+	wget ftp://livftp01.nerc-liv.ac.uk/noc/Belize_workshop/data/nemo_executables/xios_server.exe
+
+
 
 
 
