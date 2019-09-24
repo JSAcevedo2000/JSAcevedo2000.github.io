@@ -29,8 +29,9 @@ Ensure all your data files are in this directory::
 
 Run docker instance::
 
-  docker run -v /Users/jeff/Belize_workshop/PYTHON_TOOLS:/PYTHON_TOOLS -t -i blz_python /bin/bash
-  cd /PYTHON_TOOLS
+  docker run -v $HOME/Belize_workshop:/Belize_workshop -t -i blz_python /bin/bash
+
+  cd /Belize_workshop/PYTHON_TOOLS
 
 
 
@@ -41,8 +42,8 @@ Checkout built executables
 If the above is not very interesting and you want to get on with running python,
 you can download an image of the above (~3Gb)::
 
-  docker pull continuumio/miniconda3  
+  docker pull continuumio/miniconda3
   docker pull jelt/blz_python:firsttry
 
-  docker run -v /Users/jeff/Belize_workshop/PYTHON_TOOLS:/PYTHON_TOOLS -t -i jelt/blz_python:firsttry /bin/bash
-  cd /PYTHON_TOOLS
+  docker run -v $HOME/Belize_workshop:/Belize_workshop -t -i jelt/blz_python:firsttry /bin/bash
+  cd /Belize_workshop/PYTHON_TOOLS
