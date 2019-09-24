@@ -115,7 +115,7 @@ Then build NEMO again::
 This should build a nemo.exe file. At this point you can abandon BUILD_TOOLS except for two executables that need to go into an EXPeriment directory::
 
 	ln -s $WDIR/BUILD_NEMO/xios-2.0_r1242/bin/xios_server.exe $EXP/xios_server.exe
-	ln -s $CDIR/$CONFIG/BLD/bin/nemo.exe $EXP/opa
+	ln -s $CDIR/$CONFIG/BLD/bin/nemo.exe $EXP/nemo.exe
 
 	---
 
