@@ -26,7 +26,7 @@ Make sure exectuatables are executable::
 	chmod a+rx nemo.exe
 	chmod a+rx xios_server.exe
 
-Submit::
+Submit (e.g. on a quad-core machine)::
 
 	cd /Belize_workshop/RUN_NEMO/EXP_demo
-	mpirun -n 4 ./nemo.exe : -n 1 ./xios_server.exe
+	mpirun -n 3 ./nemo.exe : -n 1 ./xios_server.exe
