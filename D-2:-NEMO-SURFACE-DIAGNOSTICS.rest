@@ -16,7 +16,7 @@ Ensure all your data files are in this directory::
 
 Run docker instance::
 
-  docker run -v /Users/jeff/Belize_workshop/PYTHON_TOOLS:/PYTHON_TOOLS -t -i blz_python /bin/bash
+  docker run -v /Users/jeff/Belize_workshop/PYTHON_TOOLS:/PYTHON_TOOLS -t -i jelt/blz_python:firsttry /bin/bash
   cd /PYTHON_TOOLS/PYTHON_DIAGNOSTICS/
 
 Then you can start python, and hopefully do things::
