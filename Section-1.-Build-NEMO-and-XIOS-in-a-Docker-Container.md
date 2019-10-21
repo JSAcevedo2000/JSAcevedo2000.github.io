@@ -1,4 +1,4 @@
-Here we can either build our own nemo executables or we can checkout a pre-build
+## Here we can either build our own nemo executables or we can checkout a pre-build
 version. However we first have to set up a project space (called ``Belize_workshop``) and obtain necessary files::
 
 	cd $HOME
@@ -13,9 +13,6 @@ To run NEMO we need two executables: ``nemo.exe`` (the hydrodynamic model) and `
 
 Obtain built executables
 ========================
-
-*(Doesn't work yet... Need to put wget into Docker. Otherwise use favourite ftp
-client outside of docker)*
 
 First create a compatible docker environment that matches the environment in which the executables were built (~424Mb)::
 
