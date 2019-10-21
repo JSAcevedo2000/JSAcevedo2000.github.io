@@ -37,7 +37,6 @@ Run docker instance::
 
 ### Checkout built executables
 
-*(Doesn't work yet...)*
 If the above is not very interesting and you want to get on with running python,
 you can download an image of the above (~3Gb)::
 
