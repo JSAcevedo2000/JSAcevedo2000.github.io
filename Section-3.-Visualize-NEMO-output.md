@@ -1,7 +1,7 @@
 NEMO outputs are **netCDF files**
 (<https://www.unidata.ucar.edu/software/netcdf/docs/>).
 
-They can be visualized using different software i.e. **ncview**, **IDV** (<https://www.unidata.ucar.edu/software/netcdf/docs/>) or data analysis tools **R**, **MATLAB**, **IDL**, **PYTHON**.
+They can be visualized using different software i.e. **ncview**, **IDV** (<https://www.unidata.ucar.edu/downloads/idv/latest/index.jsp>) or data analysis tools **R**, **MATLAB**, **IDL**, **PYTHON**.
 
 To use the PYTHON script for plotting NEMO diagnostics, first build
 the python environment, or check out the built executables from DockerHub.
