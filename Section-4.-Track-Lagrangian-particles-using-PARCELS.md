@@ -47,7 +47,9 @@ After completing **A)** or **B)** you can run PARCELS:
 1) Activate the python environment for PARCELS
 
      conda activate py3_parcels
+
 2) Run!   
+
      cd $HOME/Belize_workshop/PYTHON_TOOLS/PARCELS_DEMO
      python tinyBelize_Parcels.py
 
