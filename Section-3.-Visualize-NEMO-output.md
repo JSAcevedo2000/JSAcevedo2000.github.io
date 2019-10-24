@@ -58,7 +58,7 @@ The syntax for running the diagnostic script is::
 
 where ``config`` has an associated config file called ``BLZ_config.py``. E.g.::
 
-  python NEMO_surface_var_diag.py BLZ
+     python NEMO_surface_var_diag.py BLZ
 
 On the prompt "add" data with ``a``.
 Then plot data with ``pcolor``
