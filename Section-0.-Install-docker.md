@@ -4,6 +4,8 @@ If you have an older Windows operating system you can try using Docker Toolbox i
 
 Potential Fix for Docker toolbox issue when trying:
      docker run -v $HOME/Belize_workshop:/Belize_workshop -t -i jelt/nemocompile:firsttry /bin/bash
+
+
 **_Error response from daemon: invalid mode: /Belize_workshop_**
 
      docker run -v /host_mnt/c/_**Users/gmaya**_:/Belize_workshop -t -i jelt/nemocompile:firsttry /bin/bash
