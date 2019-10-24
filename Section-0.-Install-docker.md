@@ -9,4 +9,6 @@ Potential Fix for Docker toolbox issue when trying::
 
 **_Error response from daemon: invalid mode: /Belize_workshop_**
 
+Try instead::
+
      docker run -v /host_mnt/c/_**Users/gmaya**_:/Belize_workshop -t -i jelt/nemocompile:firsttry /bin/bash
