@@ -46,6 +46,6 @@ Activate the python environment for PARCELS
 ## 4.2 Run PARCELS
 After completing **A)** or **B)** you can run PARCELS:
 
-     cd /Belize_workshop/PYTHON_TOOLS/PARCELS_DEMO
+     cd $HOME/Belize_workshop/PYTHON_TOOLS/PARCELS_DEMO
      python tinyBelize_Parcels.py
 
