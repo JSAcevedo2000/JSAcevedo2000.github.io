@@ -12,3 +12,11 @@ Potential Fix for Docker toolbox issue when trying::
 Try instead the following, manually replacing /Users/gmaya for your corresponding $HOME directory::
 
      docker run -v /host_mnt/c/Users/gmaya/Belize_workshop:/Belize_workshop -t -i jelt/nemocompile:firsttry /bin/bash
+
+If that doesn't work try::
+
+     docker run -v //c/Users/gmaya/Belize_workshop://Belize_workshop -t -i jelt/nemocompile:firsttry /bin/bash
+
+OR:
+
+     docker run -v //c/Users/gmaya/Belize_workshop://Belize_workshop -t -i jelt/nemocompile:firsttry /bin/bash
