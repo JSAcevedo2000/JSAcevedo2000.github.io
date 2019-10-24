@@ -19,4 +19,4 @@ If that doesn't work try::
 
 OR:
 
-     docker run -v //c/Users/gmaya/Belize_workshop://Belize_workshop -t -i jelt/nemocompile:firsttry /bin/bash
+     docker run -v //c/Users/gmaya/Belize_workshop://root/Belize_workshop -t -i jelt/nemocompile:firsttry /bin/bash
