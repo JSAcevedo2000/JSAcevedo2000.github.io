@@ -9,7 +9,7 @@ Potential Fix for Docker toolbox issue when trying::
 
 **_Error response from daemon: invalid mode: /Belize_workshop_**
 
-Try instead the following, manually replacing /Users/gmaya for your corresponding $HOME directory::
+Try  the following instead, manually replacing /Users/gmaya for your corresponding $HOME directory::
 
      docker run -v /host_mnt/c/Users/gmaya/Belize_workshop:/Belize_workshop -t -i jelt/nemocompile:firsttry /bin/bash
 
