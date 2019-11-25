@@ -49,15 +49,14 @@ you can download an image of the above (~3Gb)::
 
 ### Run diagnostics script
 
-::
 
-  cd PYTHON_DIAGNOSTICS
+     cd PYTHON_DIAGNOSTICS
 
 The syntax for running the diagnostic script is::
 
   python script_name.py config_name
 
-where ``config`` has an associated config file called ``BLZ_config.py``. E.g.::
+where ``config`` has an associated config file called ``BLZ_config.py``. E.g.
 
      python NEMO_surface_var_diag.py BLZ
 
