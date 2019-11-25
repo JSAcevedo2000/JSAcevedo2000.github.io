@@ -49,8 +49,9 @@ you can download an image of the above (~3Gb)::
 
 ### Run diagnostics script
 
+::
 
-cd PYTHON_DIAGNOSTICS
+  cd PYTHON_DIAGNOSTICS
 
 The syntax for running the diagnostic script is::
 
