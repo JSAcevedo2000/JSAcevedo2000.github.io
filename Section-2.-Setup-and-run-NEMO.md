@@ -40,6 +40,9 @@ Files required in the EXP directory::
 	metdta - directory of meteorological forcing
 	runoff.nc - file containing river runoff data.
 
+**ESTOS ARCHIVOS ESTAN EN ESTA LIGA DE DROPBOX (~500MB!!!!)
+<https://www.dropbox.com/sh/8vlcoe1t4ne8zyd/AAClhLZ-rsGzNvewc1vquS4ua?dl=0>
+
 ---
 
 If you don't have them already you can copy all the preprepared necessary files from an FTP site::
