@@ -53,3 +53,9 @@ Run!
      cd $HOME/Belize_workshop/PYTHON_TOOLS/PARCELS_DEMO
      python tinyBelize_Parcels.py
 
+## 4.3 Visualize PARCELS output
+Make sure inside the VisualizeParticles.py script you have the correct path and output filename and then run:
+
+     python VisualizeParticles.py
+ 
+A trajectory plot should pop up!
